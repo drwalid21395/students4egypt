@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بوابة طلاب من أجل مصر – جامعة الفيوم</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+<div class="container header-inner">
+<div class="logo"><div class="logo-icon"><i class="fas fa-graduation-cap"></i></div><div class="logo-text"><span class="logo-main">طلاب من أجل مصر</span><span class="logo-sub">جامعة الفيوم</span></div></div>
+<div class="header-actions">
+<button class="lang-btn" id="langToggle"><i class="fas fa-globe"></i> EN</button>
+<button class="a11y-toggle" id="a11yToggle"><i class="fas fa-universal-access"></i></button>
+<button class="dark-toggle" id="darkToggle" title="الوضع الليلي"><i class="fas fa-moon"></i></button>
+<div class="social-mini"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<nav class="main-tabs" id="mainTabs">
+<div class="container">
+<button class="main-tab active" data-page="page-home"><i class="fas fa-home"></i><span>الرئيسية</span></button>
+<button class="main-tab" data-page="page-about"><i class="fas fa-info-circle"></i><span>من نحن</span></button>
+<button class="main-tab" data-page="page-activities"><i class="fas fa-calendar-alt"></i><span>الأنشطة</span></button>
+<button class="main-tab" data-page="page-achievements"><i class="fas fa-trophy"></i><span>الإنجازات</span></button>
+<button class="main-tab" data-page="page-opportunities"><i class="fas fa-briefcase"></i><span>بنك الفرص</span></button>
+<button class="main-tab" data-page="page-library"><i class="fas fa-book"></i><span>المكتبة والمعرض</span></button>
+<button class="main-tab" data-page="page-tools"><i class="fas fa-tools"></i><span>الأدوات</span></button>
+<button class="main-tab" data-page="page-profile"><i class="fas fa-user"></i><span>حسابي</span></button>
+</div>
+</nav>
+<!-- PAGE 1: الرئيسية -->
+<div class="page active" id="page-home">
+<section class="hero">
+<div class="hero-slides">
+<div class="hero-slide active" style="background:linear-gradient(135deg,#1a5276,#2e86c1)">
+<div class="hero-content"><h1>بوابة طلاب من أجل مصر</h1><p>نعمل معًا لبناء مستقبل أفضل لمصرنا الحبيبة</p>
+<div class="hero-btns"><button class="btn btn-accent btn-lg" onclick="switchPage('page-activities')"><i class="fas fa-rocket"></i> سجّل الآن</button><button class="btn btn-outline-white btn-lg" onclick="switchPage('page-about')"><i class="fas fa-play-circle"></i> تعرّف علينا</button></div></div></div>
+<div class="hero-slide" style="background:linear-gradient(135deg,#27ae60,#82e0aa)">
+<div class="hero-content"><h1>طلاب من أجل مصر</h1><p>نحتفي بكل إنجاز ونخلد كل لحظة مشرفة</p>
+<div class="hero-btns"><button class="btn btn-accent btn-lg" onclick="switchPage('page-activities')"><i class="fas fa-calendar-check"></i> الأنشطة</button><button class="btn btn-outline-white btn-lg" onclick="switchPage('page-achievements')"><i class="fas fa-trophy"></i> إنجازاتنا</button></div></div></div>
+<div class="hero-slide" style="background:linear-gradient(135deg,#7d3c98,#c39bd3)">
+<div class="hero-content"><h1>مستقبلك يبدأ هنا</h1><p>فرص لا حدود لها تنتظرك</p>
+<div class="hero-btns"><button class="btn btn-accent btn-lg" onclick="switchPage('page-opportunities')"><i class="fas fa-briefcase"></i> بنك الفرص</button><button class="btn btn-outline-white btn-lg" onclick="switchPage('page-library')"><i class="fas fa-book-open"></i> المكتبة</button></div></div></div>
+</div>
+<div class="hero-dots"><button class="hero-dot active" data-slide="0"></button><button class="hero-dot" data-slide="1"></button><button class="hero-dot" data-slide="2"></button></div>
+<button class="hero-arrow hero-prev"><i class="fas fa-chevron-right"></i></button>
+<button class="hero-arrow hero-next"><i class="fas fa-chevron-left"></i></button>
+</section>
+<section class="section"><div class="container"><div class="two-col">
+<div class="two-col-img"><div class="img-placeholder"><i class="fas fa-user-tie"></i><span>صورة رئيس الجامعة</span></div></div>
+<div class="two-col-text"><h2 class="section-title">رسالة رئيس الجامعة</h2>
+<p>يسعدني أن أرحب بكم في بوابة طلاب من أجل مصر – جامعة الفيوم، وهي منصة تفاعلية متكاملة تهدف إلى تمكين الطلاب من المشاركة الفعالة في خدمة المجتمع.</p>
+<p>نؤمن بأن الشباب المصري هو الركيزة الأساسية للتنمية، وأن جامعة الفيوم لها دور محوري في صقل مواهب طلابها.</p>
+<div class="signature"><strong>أ.د. ياسر مجدي حتاته</strong><span>رئيس جامعة الفيوم</span></div></div>
+</div></div></section>
+<section class="section bg-light"><div class="container"><div class="two-col reverse">
+<div class="two-col-img"><div class="img-placeholder green"><i class="fas fa-user-shield"></i><span>صورة قائد الأسرة</span></div></div>
+<div class="two-col-text"><h2 class="section-title">رسالة قائد الأسرة</h2>
+<p>أهلاً بكم في عائلة طلاب من أجل مصر. نحن هنا لنكون يدًا واحدة في خدمة مصرنا الغالية ولنساهم معًا في تحقيق رؤية مصر 2030.</p>
+<p>أسرة طلاب من أجل مصر ليست مجرد تنظيم طلابي، بل هي عائلة متماسكة تجمعها القيم والمبادئ المشتركة.</p>
+<div class="signature"><strong>محمد أحمد حسن</strong><span>قائد أسرة طلاب من أجل مصر</span></div></div>
+</div></div></section>
+<section class="section"><div class="container"><h2 class="section-title">آخر الأخبار</h2>
+<div class="news-grid">
+<div class="card news-card"><div class="news-img"><div class="img-placeholder"><i class="fas fa-newspaper"></i></div><span class="news-cat">نشاط</span></div><div class="card-body"><div class="meta"><span><i class="fas fa-calendar"></i> 20 يوليو 2026</span></div><h3>إنطلاق حملة "نظف حرمك" بجامعة الفيوم</h3><p>انطلقت اليوم حملة نظف حرمك بمشاركة أكثر من 150 طالب وطالبة.</p><div class="news-footer"><span><i class="fas fa-eye"></i> 1,250</span><span><i class="fas fa-heart"></i> 320</span></div></div></div>
+<div class="card news-card"><div class="news-img"><div class="img-placeholder blue"><i class="fas fa-trophy"></i></div><span class="news-cat cat-green">إنجاز</span></div><div class="card-body"><div class="meta"><span><i class="fas fa-calendar"></i> 18 يوليو 2026</span></div><h3>الأسرة تحصل على جائزة أفضل فريق طلابي</h3><p>حصلت الأسرة على جائزة أفضل فريق طلابي على مستوى الجمهورية.</p><div class="news-footer"><span><i class="fas fa-eye"></i> 2,300</span><span><i class="fas fa-heart"></i> 580</span></div></div></div>
+<div class="card news-card"><div class="news-img"><div class="img-placeholder purple"><i class="fas fa-landmark"></i></div><span class="news-cat cat-purple">مؤتمر</span></div><div class="card-body"><div class="meta"><span><i class="fas fa-calendar"></i> 15 يوليو 2026</span></div><h3>المؤتمر السنوي "الشباب ورؤية مصر 2030"</h3><p>ينظّم المؤتمر السنوي الأول بعنوان "الشباب ورؤية مصر 2030".</p><div class="news-footer"><span><i class="fas fa-eye"></i> 3,100</span><span><i class="fas fa-heart"></i> 750</span></div></div></div>
+<div class="card news-card"><div class="news-img"><div class="img-placeholder orange"><i class="fas fa-hand-holding-heart"></i></div><span class="news-cat cat-orange">تطوع</span></div><div class="card-body"><div class="meta"><span><i class="fas fa-calendar"></i> 12 يوليو 2026</span></div><h3>حملة التبرع بالدم التعاونية</h3><p>نجحت الأسرة في تنظيم حملة تبرع بالدم وتبرع أكثر من 200 طالب.</p><div class="news-footer"><span><i class="fas fa-eye"></i> 1,800</span><span><i class="fas fa-heart"></i> 420</span></div></div></div>
+</div></div></section>
+<section class="section bg-light"><div class="container"><h2 class="section-title">آخر الفعاليات</h2>
+<div class="timeline">
+<div class="timeline-item"><div class="timeline-date"><span class="day">28</span><span class="month">يوليو</span></div><div class="timeline-content"><h4>ورشة "القيادة الشبابية"</h4><p><i class="fas fa-map-marker-alt"></i> قاعة المؤتمرات – كلية التجارة</p><p><i class="fas fa-clock"></i> 10:00 صباحًا</p><span class="badge badge-blue">قادم</span></div></div>
+<div class="timeline-item"><div class="timeline-date"><span class="day">30</span><span class="month">يوليو</span></div><div class="timeline-content"><h4>يوم التنظيف العام للحرم</h4><p><i class="fas fa-map-marker-alt"></i> الحرم الجامعي بالكامل</p><p><i class="fas fa-clock"></i> 8:00 صباحًا</p><span class="badge badge-blue">قادم</span></div></div>
+<div class="timeline-item"><div class="timeline-date"><span class="day">01</span><span class="month">أغسطس</span></div><div class="timeline-content"><h4>يوم التطوع المجتمعي</h4><p><i class="fas fa-map-marker-alt"></i> مقر الأسرة</p><p><i class="fas fa-clock"></i> 9:00 صباحًا</p><span class="badge badge-blue">قادم</span></div></div>
+<div class="timeline-item"><div class="timeline-date"><span class="day">05</span><span class="month">أغسطس</span></div><div class="timeline-content"><h4>ورشة بناء السيرة الذاتية</h4><p><i class="fas fa-map-marker-alt"></i> صالة الاجتماعات</p><p><i class="fas fa-clock"></i> 2:00 مساءً</p><span class="badge badge-blue">قادم</span></div></div>
+</div></div></section>
+<section class="section stats-section"><div class="container"><h2 class="section-title light">أسرتنا بالأرقام</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-icon"><i class="fas fa-users"></i></div><div class="stat-number" data-target="2500">0</div><div class="stat-label">عضو في الأسرة</div></div>
+<div class="stat-card"><div class="stat-icon"><i class="fas fa-university"></i></div><div class="stat-number" data-target="12">0</div><div class="stat-label">كلية مشاركة</div></div>
+<div class="stat-card"><div class="stat-icon"><i class="fas fa-hands-helping"></i></div><div class="stat-number" data-target="15000">0</div><div class="stat-label">ساعة تطوع</div></div>
+<div class="stat-card"><div class="stat-icon"><i class="fas fa-calendar-check"></i></div><div class="stat-number" data-target="200">0</div><div class="stat-label">نشاط منجز</div></div>
+<div class="stat-card"><div class="stat-icon"><i class="fas fa-trophy"></i></div><div class="stat-number" data-target="45">0</div><div class="stat-label">جائزة وتكريم</div></div>
+<div class="stat-card"><div class="stat-icon"><i class="fas fa-globe-africa"></i></div><div class="stat-number" data-target="350">0</div><div class="stat-label">طالب وافد</div></div>
+</div></div></section>
+<section class="section"><div class="container"><div class="countdown-box">
+<div class="countdown-badge">النشاط القادم</div>
+<h2>مؤتمر الابتكار والتكنولوجيا 2026</h2>
+<p>القاعة الكبرى – المبنى الرئيسي – جامعة الفيوم</p>
+<div class="countdown-timer">
+<div class="cd-item"><span class="cd-num" id="cd-days">00</span><span class="cd-label">يوم</span></div>
+<div class="cd-item"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">ساعة</span></div>
+<div class="cd-item"><span class="cd-num" id="cd-minutes">00</span><span class="cd-label">دقيقة</span></div>
+<div class="cd-item"><span class="cd-num" id="cd-seconds">00</span><span class="cd-label">ثانية</span></div>
+</div>
+<button class="btn btn-accent btn-lg" onclick="switchPage('page-activities')">سجّل الآن</button>
+</div></div></section>
+</div>
+<!-- PAGE 2: من نحن -->
+<div class="page" id="page-about">
+<div class="page-header"><h1>من نحن</h1><p>تعرف على أسرة طلاب من أجل مصر</p></div>
+<div class="sub-tabs"><button class="sub-tab active" data-subtab="about-general">نبذة عامة</button><button class="sub-tab" data-subtab="about-vision">الرؤية والرسالة</button><button class="sub-tab" data-subtab="about-goals">الأهداف</button><button class="sub-tab" data-subtab="about-values">القيم</button><button class="sub-tab" data-subtab="about-structure">الهيكل التنظيمي</button><button class="sub-tab" data-subtab="about-committees">اللجان</button></div>
+<div class="container">
+<div class="sub-tab-content active" id="about-general"><div class="two-col"><div class="two-col-img"><div class="img-placeholder green"><i class="fas fa-users"></i><span>أسرة طلاب من أجل مصر</span></div></div><div class="two-col-text"><h2>أسرة طلاب من أجل مصر – جامعة الفيوم</h2><p>أُسست أسرة "طلاب من أجل مصر" بجامعة الفيوم بهدف تأهيل الطلاب وتمكينهم من أداء دورهم الوطني والمجتمعي. نسعى لبناء جيل واعٍ ملتزم قادر على المساهمة في التنمية المستدامة.</p><p>تضم الأسرة طلاباً من مختلف الكليات والتخصصات، وتعمل من خلال لجان متنوعة تغطي مجالات التطوع والبحث العلمي والثقافة والرياضة والأنشطة المجتمعية.</p></div></div></div>
+<div class="sub-tab-content" id="about-vision"><div class="two-col"><div class="card vision-card"><div class="vision-icon"><i class="fas fa-eye"></i></div><h3>الرؤية</h3><p>الريادة في إعداد قيادات طلابية واعية ومبتكرة، قادرة على الإسهام في بناء مجتمع جامعي متميز، وتعزيز قيم الانتماء والمواطنة والتنمية المستدامة.</p></div><div class="card vision-card"><div class="vision-icon green"><i class="fas fa-bullseye"></i></div><h3>الرسالة</h3><p>توفير بيئة جامعية محفزة تُمكّن الطلاب من المشاركة الفاعلة في الأنشطة والمبادرات، وتنمي مهاراتهم القيادية والإبداعية، وتدعم العمل التطوعي والمسؤولية المجتمعية، مع إتاحة الفرص لجميع الطلاب دون تمييز.</p></div></div></div>
+<div class="sub-tab-content" id="about-goals"><div class="grid-3">
+<div class="card goal-card"><div class="goal-num">01</div><div class="goal-icon"><i class="fas fa-flag"></i></div><h4>تنمية روح الانتماء والولاء للوطن</h4><p>غرس قيم حب الوطن والانتماء والولاء لدى الطلاب.</p></div>
+<div class="card goal-card"><div class="goal-num">02</div><div class="goal-icon green"><i class="fas fa-user-shield"></i></div><h4>إعداد قيادات طلابية قادرة على تحمل المسؤولية</h4><p>تأهيل الطلاب ليكونوا قادة فاعلين يتحملون المسؤولية.</p></div>
+<div class="card goal-card"><div class="goal-num">03</div><div class="goal-icon purple"><i class="fas fa-users"></i></div><h4>تنمية مهارات القيادة والعمل الجماعي</h4><p>تطوير مهارات القيادة والتعاون والعمل ضمن فرق.</p></div>
+<div class="card goal-card"><div class="goal-num">04</div><div class="goal-icon orange"><i class="fas fa-lightbulb"></i></div><h4>دعم الابتكار والإبداع وريادة الأعمال</h4><p>تشجيع الأفكار الإبداعية ودعم مشاريع ريادة الأعمال.</p></div>
+<div class="card goal-card"><div class="goal-num">05</div><div class="goal-icon blue"><i class="fas fa-hands-helping"></i></div><h4>تشجيع العمل التطوعي وخدمة المجتمع</h4><p>تنظيم مبادرات تطوعية خادمة للمجتمع المحلي والعام.</p></div>
+<div class="card goal-card"><div class="goal-num">06</div><div class="goal-icon red"><i class="fas fa-globe-africa"></i></div><h4>دمج الطلاب الوافدين وذوي الإعاقة</h4><p>إتاحة الفرص لجميع الطلاب ودمجهم في الأنشطة الجامعية.</p></div>
+<div class="card goal-card"><div class="goal-num">07</div><div class="goal-icon teal"><i class="fas fa-star"></i></div><h4>اكتشاف ورعاية الموهوبين</h4><p>تحديد الموهوبين ودعمهم وتطوير قدراتهم.</p></div>
+<div class="card goal-card"><div class="goal-num">08</div><div class="goal-icon purple"><i class="fas fa-comments"></i></div><h4>تعزيز التواصل بين الطلاب وإدارة الجامعة</h4><p>بناء جسور تواصل فعّالة بين الطلاب والإدارة.</p></div>
+<div class="card goal-card"><div class="goal-num">09</div><div class="goal-icon orange"><i class="fas fa-trophy"></i></div><h4>تمثيل الجامعة بصورة مشرفة</h4><p>تمثيل جامعة الفيوم في المحافل والمسابقات المختلفة.</p></div>
+</div></div>
+<div class="sub-tab-content" id="about-values"><div class="grid-3">
+<div class="card value-card"><div class="value-icon"><i class="fas fa-flag"></i></div><h4>الانتماء</h4></div>
+<div class="card value-card"><div class="value-icon green"><i class="fas fa-tasks"></i></div><h4>المسؤولية</h4></div>
+<div class="card value-card"><div class="value-icon purple"><i class="fas fa-people-arrows"></i></div><h4>العمل الجماعي</h4></div>
+<div class="card value-card"><div class="value-icon orange"><i class="fas fa-handshake"></i></div><h4>الاحترام المتبادل</h4></div>
+<div class="card value-card"><div class="value-icon blue"><i class="fas fa-lightbulb"></i></div><h4>الإبداع والابتكار</h4></div>
+<div class="card value-card"><div class="value-icon teal"><i class="fas fa-eye"></i></div><h4>الشفافية</h4></div>
+<div class="card value-card"><div class="value-icon red"><i class="fas fa-shield-alt"></i></div><h4>النزاهة</h4></div>
+<div class="card value-card"><div class="value-icon purple"><i class="fas fa-medal"></i></div><h4>التميز</h4></div>
+<div class="card value-card"><div class="value-icon green"><i class="fas fa-hands-helping"></i></div><h4>التطوع</h4></div>
+<div class="card value-card"><div class="value-icon"><i class="fas fa-balance-scale"></i></div><h4>المساواة وتكافؤ الفرص</h4></div>
+<div class="card value-card"><div class="value-icon blue"><i class="fas fa-inclusive"></i></div><h4>الشمول ودمج جميع الطلاب</h4></div>
+</div></div>
+<div class="sub-tab-content" id="about-structure"><div class="org-chart">
+<div class="org-level"><div class="org-card pres"><div class="org-avatar"><i class="fas fa-user-tie"></i></div><h4>الاستاذ الدكتور ياسر مجدي حتاته</h4><span>رئيس الجامعة</span></div></div>
+<div class="org-connector"><i class="fas fa-arrow-down"></i></div>
+<div class="org-level"><div class="org-card"><div class="org-avatar"><i class="fas fa-user-graduate"></i></div><h4>قائد الأسرة</h4><span>القيادة العامة</span></div></div>
+<div class="org-connector"><i class="fas fa-arrow-down"></i></div>
+<div class="org-level"><div class="org-card"><div class="org-avatar"><i class="fas fa-user"></i></div><h4>نائب القائد</h4></div><div class="org-card"><div class="org-avatar"><i class="fas fa-user"></i></div><h4>السكرتير</h4></div><div class="org-card"><div class="org-avatar"><i class="fas fa-user"></i></div><h4>أمين المالية</h4></div></div>
+<div class="org-connector"><i class="fas fa-arrow-down"></i></div>
+<div class="org-level"><div class="org-card comm"><div class="org-avatar blue"><i class="fas fa-calendar-check"></i></div><h4>الأنشطة</h4></div><div class="org-card comm"><div class="org-avatar green"><i class="fas fa-hands-helping"></i></div><h4>التطوع</h4></div><div class="org-card comm"><div class="org-avatar purple"><i class="fas fa-flask"></i></div><h4>البحث العلمي</h4></div><div class="org-card comm"><div class="org-avatar orange"><i class="fas fa-bullhorn"></i></div><h4>الإعلام</h4></div><div class="org-card comm"><div class="org-avatar red"><i class="fas fa-handshake"></i></div><h4>العلاقات</h4></div><div class="org-card comm"><div class="org-avatar teal"><i class="fas fa-running"></i></div><h4>الرياضة</h4></div></div>
+</div></div>
+<div class="sub-tab-content" id="about-committees"><div class="grid-3">
+<div class="card committee-card"><div class="comm-header blue"><i class="fas fa-calendar-alt"></i><h4>لجنة الأنشطة والفعاليات</h4></div><ul><li>تنظيم الأنشطة والفعاليات</li><li>التخطيط للبرامج السنوية</li><li>تقييم الأنشطة وتحليل النتائج</li></ul></div>
+<div class="card committee-card"><div class="comm-header green"><i class="fas fa-hand-holding-heart"></i><h4>لجنة التطوع والخدمة</h4></div><ul><li>تنظيم الحملات التطوعية</li><li>التواصل مع الجهات المستفيدة</li><li>متابعة ساعات التطوع</li></ul></div>
+<div class="card committee-card"><div class="comm-header purple"><i class="fas fa-flask"></i><h4>لجنة البحث العلمي</h4></div><ul><li>دعم مشاريع البحث</li><li>تنظيم ورش البحث</li><li>المشاركة في المؤتمرات</li></ul></div>
+<div class="card committee-card"><div class="comm-header orange"><i class="fas fa-bullhorn"></i><h4>لجنة الإعلام والتواصل</h4></div><ul><li>إدارة وسائل التواصل</li><li>إعداد التقارير الإخبارية</li><li>التصميم والتصوير</li></ul></div>
+<div class="card committee-card"><div class="comm-header red"><i class="fas fa-handshake"></i><h4>لجنة العلاقات العامة</h4></div><ul><li>بناء علاقات خارجية</li><li>تنظيم اللقاءات</li><li>تمثيل الأسرة</li></ul></div>
+<div class="card committee-card"><div class="comm-header teal"><i class="fas fa-running"></i><h4>لجنة الشباب والرياضة</h4></div><ul><li>تنظيم البطولات الرياضية</li><li>الأنشطة الترفيهية</li><li>تعزيز نمط الحياة الصحية</li></ul></div>
+</div></div>
+</div></div>
+<!-- PAGE 3: الأنشطة -->
+<div class="page" id="page-activities">
+<div class="page-header"><h1>الأنشطة والفعاليات</h1><p>تابع وسجّل في أنشطتنا المتنوعة</p></div>
+<div class="sub-tabs"><button class="sub-tab active" data-subtab="act-calendar">التقويم</button><button class="sub-tab" data-subtab="act-upcoming">الأنشطة القادمة</button><button class="sub-tab" data-subtab="act-past">الأنشطة السابقة</button><button class="sub-tab" data-subtab="act-join">الانضمام للأسرة</button></div>
+<div class="container">
+<div class="sub-tab-content active" id="act-calendar"><div class="calendar"><div class="cal-header"><button class="cal-nav" id="calPrev"><i class="fas fa-chevron-right"></i></button><h3 id="calMonth">يوليو 2026</h3><button class="cal-nav" id="calNext"><i class="fas fa-chevron-left"></i></button></div><div class="cal-days-header"><span>الأحد</span><span>الإثنين</span><span>الثلاثاء</span><span>الأربعاء</span><span>الخميس</span><span>الجمعة</span><span>السبت</span></div><div class="cal-grid" id="calGrid"></div></div></div>
+<div class="sub-tab-content" id="act-upcoming"><div class="activities-list">
+<div class="card activity-card"><div class="act-date"><span class="day">28</span><span class="month">يوليو</span></div><div class="act-info"><h4>مؤتمر الابتكار والتكنولوجيا</h4><p><i class="fas fa-map-marker-alt"></i> القاعة الكبرى</p><p><i class="fas fa-clock"></i> 10:00 صباحًا</p><span class="badge badge-purple">مؤتمر</span></div><button class="btn btn-primary btn-sm register-btn" data-activity="مؤتمر الابتكار والتكنولوجيا">سجّل الآن</button></div>
+<div class="card activity-card"><div class="act-date green"><span class="day">01</span><span class="month">أغسطس</span></div><div class="act-info"><h4>يوم التطوع المجتمعي</h4><p><i class="fas fa-map-marker-alt"></i> مقر الأسرة</p><p><i class="fas fa-clock"></i> 9:00 صباحًا</p><span class="badge badge-green">تطوع</span></div><button class="btn btn-primary btn-sm register-btn" data-activity="يوم التطوع المجتمعي">سجّل الآن</button></div>
+<div class="card activity-card"><div class="act-date orange"><span class="day">05</span><span class="month">أغسطس</span></div><div class="act-info"><h4>ورشة بناء السيرة الذاتية</h4><p><i class="fas fa-map-marker-alt"></i> صالة الاجتماعات</p><p><i class="fas fa-clock"></i> 2:00 مساءً</p><span class="badge badge-orange">ورشة</span></div><button class="btn btn-primary btn-sm register-btn" data-activity="ورشة بناء السيرة الذاتية">سجّل الآن</button></div>
+<div class="card activity-card"><div class="act-date blue"><span class="day">10</span><span class="month">أغسطس</span></div><div class="act-info"><h4>دورة التدريب على البرمجة</h4><p><i class="fas fa-map-marker-alt"></i> معمل الحاسب</p><p><i class="fas fa-clock"></i> 11:00 صباحًا</p><span class="badge badge-blue">دورة</span></div><button class="btn btn-primary btn-sm register-btn" data-activity="دورة التدريب على البرمجة">سجّل الآن</button></div>
+</div></div>
+<div class="sub-tab-content" id="act-past"><div class="gallery-grid">
+<div class="gallery-item"><div class="gallery-img"><i class="fas fa-image"></i></div><div class="gallery-overlay"><h4>حملة إزالة النفايات</h4><span>15 يوليو 2026</span></div></div>
+<div class="gallery-item"><div class="gallery-img"><i class="fas fa-video"></i></div><div class="gallery-overlay"><h4>محاضرة التوعية الصحية</h4><span>10 يوليو 2026</span></div></div>
+<div class="gallery-item"><div class="gallery-img"><i class="fas fa-image"></i></div><div class="gallery-overlay"><h4>بطولة كرة القدم</h4><span>5 يوليو 2026</span></div></div>
+<div class="gallery-item"><div class="gallery-img"><i class="fas fa-video"></i></div><div class="gallery-overlay"><h4>ورشة السيرة الذاتية</h4><span>1 يوليو 2026</span></div></div>
+</div></div>
+<div class="sub-tab-content" id="act-join"><div class="two-col"><div>
+<div class="card info-box"><h3><i class="fas fa-check-circle text-green"></i> شروط العضوية</h3><ul><li><i class="fas fa-check"></i> أن يكون طالباً مسجلاً في جامعة الفيوم</li><li><i class="fas fa-check"></i> الحصول على تقدير جيد فما فوق</li><li><i class="fas fa-check"></i> الإخلاص والالتزام</li><li><i class="fas fa-check"></i> عدم وجود مخالفات أخلاقية</li><li><i class="fas fa-check"></i> الحضور الفعال في الاجتماعات</li></ul></div>
+<div class="card info-box green-border"><h3><i class="fas fa-gift text-green"></i> مزايا الانضمام</h3><ul><li><i class="fas fa-star text-gold"></i> شهادات رسمية معتمدة</li><li><i class="fas fa-star text-gold"></i> تدريب وتطوير مهارات مجاناً</li><li><i class="fas fa-star text-gold"></i> فرص تطوع محلية ودولية</li><li><i class="fas fa-star text-gold"></i> تكريم سنوي للأعضاء المتميزين</li></ul></div>
+</div><div class="card form-card"><h3>استمارة التسجيل</h3><form id="joinForm">
+<div class="form-row"><div class="form-group"><label>الاسم الكامل *</label><input type="text" placeholder="أدخل اسمك" required></div><div class="form-group"><label>البريد الإلكتروني *</label><input type="email" placeholder="example@fayoum.edu.eg" required></div></div>
+<div class="form-row"><div class="form-group"><label>رقم الجلوس *</label><input type="text" required></div><div class="form-group"><label>رقم الهاتف *</label><input type="tel" required></div></div>
+<div class="form-row"><div class="form-group"><label>الكلية *</label><select required><option value="">اختر الكلية</option><option>كلية الآداب</option><option>كلية التجارة</option><option>كلية الحقوق</option><option>كلية التربية</option><option>كلية الهندسة</option><option>كلية الطب</option><option>كلية العلوم</option><option>كلية الزراعة</option><option>كلية الحاسبات</option></select></div><div class="form-group"><label>الفرقة *</label><select required><option value="">اختر الفرقة</option><option>الأولى</option><option>الثانية</option><option>الثالثة</option><option>الرابعة</option><option>الخامسة</option></select></div></div>
+<div class="form-group"><label>اللجنة المطلوبة *</label><select required><option value="">اختر اللجنة</option><option>لجنة الأنشطة</option><option>لجنة التطوع</option><option>لجنة البحث العلمي</option><option>لجنة الإعلام</option><option>لجنة العلاقات</option><option>لجنة الرياضة</option></select></div>
+<div class="form-group"><label>لماذا تريد الانضمام؟ *</label><textarea rows="3" required></textarea></div>
+<div class="form-group"><label><input type="checkbox" required> أوافق على الشروط والأحكام</label></div>
+<button type="submit" class="btn btn-primary btn-block">إرسال طلب الانضمام</button>
+</form></div></div></div>
+</div></div>
+<!-- PAGE 4: الإنجازات -->
+<div class="page" id="page-achievements">
+<div class="page-header"><h1>إنجازاتنا</h1><p>نفخر بكل إنجاز حققناه معًا</p></div>
+<div class="sub-tabs"><button class="sub-tab active" data-subtab="ach-awards">الجوائز</button><button class="sub-tab" data-subtab="ach-initiatives">المبادرات</button><button class="sub-tab" data-subtab="ach-stats">أعداد المشاركين</button><button class="sub-tab" data-subtab="ach-volunteer">ساعات التطوع</button><button class="sub-tab" data-subtab="ach-stories">قصص النجاح</button></div>
+<div class="container">
+<div class="sub-tab-content active" id="ach-awards"><div class="grid-2">
+<div class="card award-card gold"><div class="award-icon"><i class="fas fa-medal"></i></div><h4>جائزة أفضل أسرة طلابية</h4><p>الجامعة العربية المفتوحة – 2026</p></div>
+<div class="card award-card silver"><div class="award-icon"><i class="fas fa-award"></i></div><h4>المركز الثاني في مسابقة الابتكار</h4><p>وزارة التعليم العالي – 2025</p></div>
+<div class="card award-card bronze"><div class="award-icon"><i class="fas fa-certificate"></i></div><h4>شهادة التميز في الخدمة المجتمعية</h4><p>محافظة الفيوم – 2025</p></div>
+<div class="card award-card gold"><div class="award-icon"><i class="fas fa-trophy"></i></div><h4>أفضل مبادرة تطوعية</h4><p>المبادرة الوطنية – 2026</p></div>
+</div></div>
+<div class="sub-tab-content" id="ach-initiatives"><div class="grid-3">
+<div class="card"><div class="init-icon"><i class="fas fa-book-reader"></i></div><h4>مبادرة القراءة للجميع</h4><p>توفير كتب لأكثر من 500 طالب.</p></div>
+<div class="card"><div class="init-icon green"><i class="fas fa-heartbeat"></i></div><h4>مبادرة الصحة للقرى</h4><p>حملات توعية صحية في 20 قرية.</p></div>
+<div class="card"><div class="init-icon blue"><i class="fas fa-laptop-code"></i></div><h4>مبادرة تدريب الشباب</h4><p>تدريب 200 شاب على الحاسب والإنترنت.</p></div>
+</div></div>
+<div class="sub-tab-content" id="ach-stats"><div class="grid-3">
+<div class="card stat-big"><div class="stat-big-num">2,500+</div><div class="stat-big-label">عضو نشط</div></div>
+<div class="card stat-big"><div class="stat-big-num">12,000+</div><div class="stat-big-label">مشارك في الأنشطة</div></div>
+<div class="card stat-big"><div class="stat-big-num">350+</div><div class="stat-big-label">طالب وافد</div></div>
+</div></div>
+<div class="sub-tab-content" id="ach-volunteer"><div class="two-col"><div class="vol-circle-wrap"><svg viewBox="0 0 120 120" class="vol-circle"><circle cx="60" cy="60" r="54" fill="none" stroke="#e9ecef" stroke-width="10"/><circle cx="60" cy="60" r="54" fill="none" stroke="#2ecc71" stroke-width="10" stroke-dasharray="339" stroke-dashoffset="60" stroke-linecap="round" transform="rotate(-90 60 60)"/></svg><div class="vol-circle-text"><span class="vol-num">15,000+</span><span>ساعة تطوع</span></div></div>
+<div><div class="vol-bar-item"><span>الخدمة المجتمعية</span><div class="progress-bar"><div style="width:85%"></div></div><span>5,200 ساعة</span></div><div class="vol-bar-item"><span>التعليم</span><div class="progress-bar"><div style="width:65%"></div></div><span>3,800 ساعة</span></div><div class="vol-bar-item"><span>الصحة</span><div class="progress-bar"><div style="width:45%"></div></div><span>2,500 ساعة</span></div><div class="vol-bar-item"><span>البيئة</span><div class="progress-bar"><div style="width:35%"></div></div><span>2,000 ساعة</span></div></div></div></div>
+<div class="sub-tab-content" id="ach-stories"><div class="grid-3">
+<div class="card story-card"><div class="story-avatar"><i class="fas fa-user"></i></div><h4>سارة أحمد</h4><span class="story-dept">كلية الطب</span><p>"الأسرة غيّرت حياتي. تعلّمت أن أخدم مجتمعي."</p></div>
+<div class="card story-card"><div class="story-avatar"><i class="fas fa-user"></i></div><h4>محمد علي</h4><span class="story-dept">كلية الهندسة</span><p>"من خلال المبادرات الابتكارية، تمكّنت من تنفيذ مشروع يخدم مجتمعنا."</p></div>
+<div class="card story-card"><div class="story-avatar"><i class="fas fa-user"></i></div><h4>فاطمة حسن</h4><span class="story-dept">كلية الآداب</span><p>"التطوع مع الأسرة علّمني أن العمل الجماعي هو مفتاح النجاح."</p></div>
+</div></div>
+</div></div>
+
+<!-- PAGE 5: بنك الفرص -->
+<div class="page" id="page-opportunities">
+<div class="page-header"><h1>بنك الفرص</h1><p>اكتشف فرصك القادمة</p></div>
+<div class="filter-bar"><button class="filter-btn active" data-filter="all">الكل</button><button class="filter-btn" data-filter="scholarship">منح</button><button class="filter-btn" data-filter="training">تدريبات</button><button class="filter-btn" data-filter="competition">مسابقات</button><button class="filter-btn" data-filter="conference">مؤتمرات</button><button class="filter-btn" data-filter="volunteer">تطوع</button></div>
+<div class="container"><div class="opp-grid">
+<div class="card opp-card" data-type="scholarship"><div class="opp-badge scholarship">منحة</div><h4>منحة إيراسموس+</h4><p>منحة كاملة للدراسة في أوروبا لطلاب الماجستير.</p><div class="opp-meta"><span><i class="fas fa-calendar"></i> 15 أغسطس 2026</span><span><i class="fas fa-map-marker-alt"></i> أوروبا</span></div><button class="btn btn-primary btn-sm">قدّم الآن</button></div>
+<div class="card opp-card" data-type="training"><div class="opp-badge training">تدريب</div><h4>دورة الذكاء الاصطناعي</h4><p>دورة شاملة في أساسيات الذكاء الاصطناعي لمدة 3 أشهر.</p><div class="opp-meta"><span><i class="fas fa-calendar"></i> 1 أغسطس 2026</span></div><button class="btn btn-primary btn-sm">سجّل الآن</button></div>
+<div class="card opp-card" data-type="competition"><div class="opp-badge competition">مسابقة</div><h4>مسابقة الابتكار والريادة</h4><p>مسابقة وطنية لابتكار الحلول التقنية.</p><div class="opp-meta"><span><i class="fas fa-calendar"></i> 20 أغسطس 2026</span></div><button class="btn btn-primary btn-sm">سجّل الآن</button></div>
+<div class="card opp-card" data-type="conference"><div class="opp-badge conference">مؤتمر</div><h4>المؤتمر الدولي للتنمية المستدامة</h4><p>مؤتمر دولي يناقش التنمية المستدامة.</p><div class="opp-meta"><span><i class="fas fa-calendar"></i> سبتمبر 2026</span></div><button class="btn btn-primary btn-sm">سجّل الآن</button></div>
+<div class="card opp-card" data-type="volunteer"><div class="opp-badge volunteer">تطوع</div><h4>برنامج تطوعي دولي</h4><p>فرصة للتطوع في مشاريع مجتمعية دولية.</p><div class="opp-meta"><span><i class="fas fa-calendar"></i> أكتوبر 2026</span></div><button class="btn btn-primary btn-sm">قدّم الآن</button></div>
+
+
+</div></div></div>
+<!-- PAGE 6: المكتبة والمعرض -->
+<div class="page" id="page-library">
+<div class="page-header"><h1>المكتبة والمعرض</h1><p>مصادر معرفية ومحتوى بصري متنوع</p></div>
+<div class="sub-tabs"><button class="sub-tab active" data-subtab="lib-books">المكتبة</button><button class="sub-tab" data-subtab="lib-gallery">معرض الصور</button><button class="sub-tab" data-subtab="lib-newsletter">النشرة الإخبارية</button></div>
+<div class="container">
+<div class="sub-tab-content active" id="lib-books">
+<div class="search-box"><input type="text" id="libSearch" placeholder="ابحث في المكتبة..."><button class="btn btn-primary"><i class="fas fa-search"></i></button></div>
+<div class="filter-bar"><button class="filter-btn active" data-libfilter="all">الكل</button><button class="filter-btn" data-libfilter="pdf">لائحات</button><button class="filter-btn" data-libfilter="book">كتب</button><button class="filter-btn" data-libfilter="course">دورات</button><button class="filter-btn" data-libfilter="video">فيديوهات</button><button class="filter-btn" data-libfilter="guide">أدلة</button></div>
+<div class="lib-grid">
+<div class="card lib-item" data-libtype="guide"><div class="lib-icon guide"><i class="fas fa-file-pdf"></i></div><h4>دليل الطالب الجديد 2026</h4><span>PDF – 2.5 MB</span><button class="btn btn-outline btn-sm"><i class="fas fa-download"></i> تحميل</button></div>
+<div class="card lib-item" data-libtype="video"><div class="lib-icon video"><i class="fas fa-play-circle"></i></div><h4>دورة مهارات التواصل</h4><span>فيديو – 45 دقيقة</span><button class="btn btn-outline btn-sm"><i class="fas fa-eye"></i> مشاهدة</button></div>
+<div class="card lib-item" data-libtype="book"><div class="lib-icon book"><i class="fas fa-book-open"></i></div><h4>القيادة والإدارة</h4><span>كتاب – 320 صفحة</span><button class="btn btn-outline btn-sm"><i class="fas fa-download"></i> تحميل</button></div>
+<div class="card lib-item" data-libtype="course"><div class="lib-icon course"><i class="fas fa-laptop"></i></div><h4>دورة أساسيات البرمجة</h4><span>دورة – 12 وحدة</span><button class="btn btn-outline btn-sm"><i class="fas fa-play"></i> ابدأ</button></div>
+<div class="card lib-item" data-libtype="guide"><div class="lib-icon guide"><i class="fas fa-clipboard-list"></i></div><h4>دليل التطوع الدولي</h4><span>PDF – 1.8 MB</span><button class="btn btn-outline btn-sm"><i class="fas fa-download"></i> تحميل</button></div>
+<div class="card lib-item" data-libtype="pdf"><div class="lib-icon pdf"><i class="fas fa-file-pdf"></i></div><h4>نظام النقاط والتكريم</h4><span>PDF – 500 KB</span><button class="btn btn-outline btn-sm"><i class="fas fa-download"></i> تحميل</button></div>
+</div></div>
+<div class="sub-tab-content" id="lib-gallery">
+<div class="filter-bar"><button class="filter-btn active" data-gfilter="all">الكل</button><button class="filter-btn" data-gfilter="photo">صور</button><button class="filter-btn" data-gfilter="video">فيديوهات</button><button class="filter-btn" data-gfilter="live">بث مباشر</button></div>
+<div class="gallery-grid">
+<div class="gallery-item" data-gtype="photo"><div class="gallery-img"><i class="fas fa-image"></i></div><div class="gallery-overlay"><h4>مؤتمر الابتكار 2026</h4><span>15 يونيو 2026</span></div></div>
+<div class="gallery-item" data-gtype="video"><div class="gallery-img"><i class="fas fa-play-circle"></i></div><div class="gallery-overlay"><h4>فيديو تعريفي بالأسرة</h4><span>5:30</span></div></div>
+<div class="gallery-item" data-gtype="photo"><div class="gallery-img"><i class="fas fa-image"></i></div><div class="gallery-overlay"><h4>حملة التطوع بالقرى</h4><span>10 يونيو 2026</span></div></div>
+<div class="gallery-item" data-gtype="live"><div class="gallery-img"><i class="fas fa-broadcast-tower"></i><span class="live-dot"></span></div><div class="gallery-overlay"><h4>بث مباشر – ندوة</h4><span class="live-badge">مباشر</span></div></div>
+<div class="gallery-item" data-gtype="photo"><div class="gallery-img"><i class="fas fa-image"></i></div><div class="gallery-overlay"><h4>حفل التكريم السنوي</h4><span>1 يونيو 2026</span></div></div>
+<div class="gallery-item" data-gtype="video"><div class="gallery-img"><i class="fas fa-play-circle"></i></div><div class="gallery-overlay"><h4>تقرير الأنشطة التطوعية</h4><span>8:15</span></div></div>
+</div></div>
+<div class="sub-tab-content" id="lib-newsletter">
+<div class="newsletter-box"><h3>اختر طريقة الإشعارات</h3><div class="newsletter-grid">
+<div class="nl-card"><i class="fas fa-bell"></i><h4>إشعارات داخل الموقع</h4><label class="toggle"><input type="checkbox" checked><span class="slider"></span></label></div>
+<div class="nl-card"><i class="fas fa-envelope"></i><h4>بريد إلكتروني</h4><label class="toggle"><input type="checkbox" checked><span class="slider"></span></label></div>
+<div class="nl-card"><i class="fab fa-whatsapp"></i><h4>واتساب</h4><label class="toggle"><input type="checkbox"><span class="slider"></span></label></div>
+<div class="nl-card"><i class="fas fa-sms"></i><h4>رسائل SMS</h4><label class="toggle"><input type="checkbox"><span class="slider"></span></label></div>
+<div class="nl-card"><i class="fas fa-mobile-alt"></i><h4>Push Notifications</h4><label class="toggle"><input type="checkbox" checked><span class="slider"></span></label></div>
+</div></div></div>
+</div></div>
+<!-- PAGE 7: الأدوات -->
+<div class="page" id="page-tools">
+<div class="page-header"><h1>الأدوات والخدمات</h1><p>خدمات متنوعة لتجربة متكاملة</p></div>
+<div class="sub-tabs"><button class="sub-tab active" data-subtab="tool-disability">ذوو الإعاقة</button><button class="sub-tab" data-subtab="tool-intl">ركن الوافدين</button><button class="sub-tab" data-subtab="tool-ideas">بنك الأفكار</button><button class="sub-tab" data-subtab="tool-map">الخريطة</button><button class="sub-tab" data-subtab="tool-ai">المساعد الذكي</button></div>
+<div class="container">
+<div class="sub-tab-content active" id="tool-disability"><div class="grid-3">
+<div class="card dis-card"><i class="fas fa-hands-helping"></i><h4>الخدمات المقدمة</h4><p>خدمات دعم متكاملة تشمل التأهيل والتدريب.</p></div>
+<div class="card dis-card"><i class="fas fa-people-arrows"></i><h4>الأنشطة الدامجة</h4><p>أنشطة شاملة ومتاحة للجميع.</p></div>
+<div class="card dis-card"><i class="fas fa-volume-up"></i><h4>المواد بصيغة صوتية</h4><p>جميع المواد التعليمية متاحة بصيغة صوتية.</p></div>
+<div class="card dis-card"><i class="fas fa-text-height"></i><h4>تكبير الخط</h4><p>إمكانية تكبير وتصغير النصوص.</p></div>
+<div class="card dis-card"><i class="fas fa-assistive-listening-systems"></i><h4>توافق مع قارئ الشاشة</h4><p>الموقع متوافق مع جميع برامج قارئ الشاشة.</p></div>
+<div class="card dis-card"><i class="fas fa-video"></i><h4>فيديوهات بلغة الإشارة</h4><p>جميع المحتوى متوفر بلغة الإشارة المصرية.</p></div>
+</div>
+<div class="a11y-bar"><h3>أدوات إمكانية الوصول</h3><div class="a11y-btns">
+<button class="btn btn-outline" id="fontUp"><i class="fas fa-plus"></i> تكبير</button>
+<button class="btn btn-outline" id="fontDown"><i class="fas fa-minus"></i> تصغير</button>
+<button class="btn btn-outline" id="contrastBtn"><i class="fas fa-adjust"></i> تباين عالي</button>
+<button class="btn btn-outline" id="readBtn"><i class="fas fa-volume-up"></i> قراءة</button>
+<button class="btn btn-outline" id="resetBtn"><i class="fas fa-undo"></i> إعادة ضبط</button>
+</div></div></div>
+<div class="sub-tab-content" id="tool-intl">
+<div class="card translator-box"><h3><i class="fas fa-language"></i> مترجم فوري</h3><div class="translator-grid">
+<div><select id="trFrom"><option value="ar">العربية</option><option value="en">English</option><option value="fr">Français</option><option value="tr">Türkçe</option></select><textarea id="trInput" rows="4" placeholder="اكتب النص هنا..."></textarea></div>
+<button class="btn btn-primary" id="trBtn"><i class="fas fa-exchange-alt"></i></button>
+<div><select id="trTo"><option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option><option value="tr">Türkçe</option></select><textarea id="trOutput" rows="4" placeholder="الترجمة..." readonly></textarea></div>
+</div></div>
+<div class="grid-2" style="margin-top:1.5rem">
+<div class="card"><h4><i class="fas fa-home text-primary"></i> أماكن الإقامة</h4><ul><li>سكني الطلاب – حرم الجامعة</li><li>سكن بنات الجامعة</li><li>شقق فندقية بالقرب من الجامعة</li></ul></div>
+<div class="card"><h4><i class="fas fa-book text-primary"></i> دليل الجامعة</h4><ul><li>موقع الجامعة على الخريطة</li><li>الكليات والأقسام</li><li>المكتبات العامة</li></ul></div>
+<div class="card"><h4><i class="fas fa-concierge-bell text-primary"></i> الخدمات</h4><ul><li>خدمات النقل</li><li>الخدمات الصحية</li><li>البنوك وصرافات الأموال</li></ul></div>
+<div class="card"><h4><i class="fas fa-map-marked-alt text-primary"></i> خريطة الجامعة</h4><div class="mini-map"><i class="fas fa-map"></i><span>خريطة تفاعلية</span></div></div>
+</div></div>
+<div class="sub-tab-content" id="tool-ideas"><div class="two-col">
+<div class="card form-card"><h3>اقترح فكرة</h3><form id="ideaForm">
+<div class="form-group"><label>عنوان الفكرة *</label><input type="text" required></div>
+<div class="form-group"><label>وصف الفكرة *</label><textarea rows="4" required></textarea></div>
+<div class="form-group"><label>التصنيف</label><select><option>تطوير مجتمعي</option><option>بيئة</option><option>تعليم</option><option>صحة</option><option>تقنية</option></select></div>
+<button type="submit" class="btn btn-primary">إرسال الفكرة</button>
+</form></div>
+<div><h3>الأفكار المقدمة <span class="badge badge-blue">24</span></h3>
+<div class="idea-card"><div class="idea-votes"><button class="vote-up"><i class="fas fa-arrow-up"></i></button><span class="vote-count">156</span><button class="vote-down"><i class="fas fa-arrow-down"></i></button></div><div class="idea-content"><h4>مبادرة زراعة الأشجار في الحرم</h4><p>زراعة 500 شجرة لتحسين البيئة.</p><span class="badge badge-green">تم التنفيذ</span></div></div>
+<div class="idea-card"><div class="idea-votes"><button class="vote-up"><i class="fas fa-arrow-up"></i></button><span class="vote-count">134</span><button class="vote-down"><i class="fas fa-arrow-down"></i></button></div><div class="idea-content"><h4>تطبيق موبايل لخدمات الطلاب</h4><p>تطبيق ذكي لجميع الخدمات الأكاديمية.</p><span class="badge badge-orange">قيد المراجعة</span></div></div>
+<div class="idea-card"><div class="idea-votes"><button class="vote-up"><i class="fas fa-arrow-up"></i></button><span class="vote-count">98</span><button class="vote-down"><i class="fas fa-arrow-down"></i></button></div><div class="idea-content"><h4>مكتبة متنقلة للقرى</h4><p>مكتبة متنقلة لخدمة الطلاب في القرى.</p><span class="badge badge-orange">قيد المراجعة</span></div></div>
+</div></div></div>
+<div class="sub-tab-content" id="tool-map"><div class="card map-card"><div class="map-placeholder"><i class="fas fa-map-marked-alt"></i><h3>خريطة جامعة الفيوم التفاعلية</h3><div class="map-markers"><div class="map-dot" style="top:30%;left:25%;background:#e74c3c" title="القاعة الكبرى"></div><div class="map-dot" style="top:45%;left:60%;background:#2ecc71" title="ملعب الجامعة"></div><div class="map-dot" style="top:25%;left:70%;background:#3498db" title="المكتبة المركزية"></div><div class="map-dot" style="top:60%;left:35%;background:#f39c12" title="مكتب رعاية الطلاب"></div><div class="map-dot" style="top:50%;left:50%;background:#8e44ad" title="مقر الأسرة"></div></div></div>
+<div class="map-legend"><div><span style="background:#e74c3c"></span> أماكن الأنشطة</div><div><span style="background:#3498db"></span> القاعات</div><div><span style="background:#2ecc71"></span> الملاعب</div><div><span style="background:#f39c12"></span> مكاتب رعاية الطلاب</div></div></div></div>
+<div class="sub-tab-content" id="tool-ai"><div class="card chat-box">
+<div class="chat-header"><div class="chat-avatar"><i class="fas fa-robot"></i></div><div><h4>المساعد الذكي</h4><span>متاح دائماً لمساعدتك</span></div></div>
+<div class="chat-messages" id="chatMessages">
+<div class="chat-msg assistant"><div class="msg-avatar"><i class="fas fa-robot"></i></div><div class="msg-bubble">مرحباً! أنا المساعد الذكي لبوابة طلاب من أجل مصر. كيف يمكنني مساعدتك؟</div></div>
+</div>
+<div class="chat-suggestions"><button class="suggestion-chip" data-q="ما هي الأنشطة؟">الأنشطة</button><button class="suggestion-chip" data-q="كيف أسجل؟">التسجيل</button><button class="suggestion-chip" data-q="أين الفعاليات؟">الأماكن</button><button class="suggestion-chip" data-q="اللجان">اللجان</button><button class="suggestion-chip" data-q="الشهادات">الشهادات</button><button class="suggestion-chip" data-q="الأسئلة الشائعة">أسئلة شائعة</button></div>
+<div class="chat-input"><input type="text" id="chatInput" placeholder="اكتب سؤالك هنا..."><button class="btn btn-primary" id="chatSend"><i class="fas fa-paper-plane"></i></button></div>
+</div></div>
+</div></div>
+<!-- PAGE 8: حسابي -->
+<div class="page" id="page-profile">
+<div class="page-header"><h1>حسابي</h1><p>إدارة ملفك الشخصي ونقاطك</p></div>
+<div class="sub-tabs"><button class="sub-tab active" data-subtab="prof-main">الملف الشخصي</button><button class="sub-tab" data-subtab="prof-points">نظام النقاط</button><button class="sub-tab" data-subtab="prof-ambassadors">السفراء</button><button class="sub-tab" data-subtab="prof-admin">إدارة الموقع</button></div>
+<div class="container">
+<div class="sub-tab-content active" id="prof-main"><div class="two-col">
+<div class="card profile-card"><div class="profile-avatar"><i class="fas fa-user"></i></div><h3>أحمد محمد علي</h3><p>كلية الهندسة – قسم الحاسبات</p><p>اللجنة: الأنشطة والفعاليات</p><p>تاريخ الانضمام: 1 سبتمبر 2025</p></div>
+<div><div class="grid-2">
+<div class="card prof-stat"><div class="prof-stat-num">15</div><div class="prof-stat-label">نشاط شاركت به</div></div>
+<div class="card prof-stat"><div class="prof-stat-num">85</div><div class="prof-stat-label">ساعة تطوع</div></div>
+<div class="card prof-stat"><div class="prof-stat-num">3</div><div class="prof-stat-label">شهادات حصلت عليها</div></div>
+<div class="card prof-stat"><div class="prof-stat-num">1,250</div><div class="prof-stat-label">نقطة</div></div>
+</div>
+<div class="card" style="margin-top:1.5rem"><h4>ترتيبك على لوحة الشرف</h4><div class="rank-display"><div class="rank-badge gold"><i class="fas fa-trophy"></i></div><div><span class="rank-num">#12</span><span>من أصل 2,500 عضو</span></div></div></div>
+</div></div></div>
+<div class="sub-tab-content" id="prof-points"><div class="grid-3">
+<div class="card"><h3><i class="fas fa-plus-circle text-green"></i> احصل على نقاط</h3><div class="points-list">
+<div class="points-item"><i class="fas fa-calendar-check"></i><span>حضور نشاط</span><span class="points-val">+10</span></div>
+<div class="points-item"><i class="fas fa-hands-helping"></i><span>التطوع</span><span class="points-val">+25</span></div>
+<div class="points-item"><i class="fas fa-trophy"></i><span>الفوز بمسابقة</span><span class="points-val">+50</span></div>
+<div class="points-item"><i class="fas fa-lightbulb"></i><span>اقتراح فكرة</span><span class="points-val">+15</span></div>
+<div class="points-item"><i class="fas fa-user-plus"></i><span>دعوة طالب جديد</span><span class="points-val">+20</span></div>
+</div></div>
+<div class="card"><h3><i class="fas fa-gift text-gold"></i> استبدل النقاط</h3><div class="points-list">
+<div class="points-item"><i class="fas fa-certificate"></i><span>شهادة تقدير</span><span class="points-val">100</span></div>
+<div class="points-item"><i class="fas fa-gift"></i><span>هدايا متنوعة</span><span class="points-val">150</span></div>
+<div class="points-item"><i class="fas fa-plane"></i><span>أولوية في الرحلات</span><span class="points-val">200</span></div>
+<div class="points-item"><i class="fas fa-medal"></i><span>تكريم رسمي</span><span class="points-val">500</span></div>
+</div></div>
+<div class="card"><h3><i class="fas fa-crown text-gold"></i> لوحة الشرف</h3><div class="leaderboard">
+<div class="leader gold"><span class="rank">1</span><div class="leader-avatar"><i class="fas fa-user"></i></div><div class="leader-info"><h4>سارة أحمد</h4><span>كلية الطب</span></div><span class="leader-pts">2,450</span></div>
+<div class="leader silver"><span class="rank">2</span><div class="leader-avatar"><i class="fas fa-user"></i></div><div class="leader-info"><h4>محمد علي</h4><span>كلية الهندسة</span></div><span class="leader-pts">2,120</span></div>
+<div class="leader bronze"><span class="rank">3</span><div class="leader-avatar"><i class="fas fa-user"></i></div><div class="leader-info"><h4>فاطمة حسن</h4><span>كلية الآداب</span></div><span class="leader-pts">1,890</span></div>
+<div class="leader"><span class="rank">4</span><div class="leader-avatar"><i class="fas fa-user"></i></div><div class="leader-info"><h4>عبدالرحمن</h4><span>كلية التجارة</span></div><span class="leader-pts">1,650</span></div>
+<div class="leader"><span class="rank">5</span><div class="leader-avatar"><i class="fas fa-user"></i></div><div class="leader-info"><h4>نورهان</h4><span>كلية التربية</span></div><span class="leader-pts">1,420</span></div>
+</div></div>
+</div></div>
+<div class="sub-tab-content" id="prof-ambassadors"><div class="grid-3">
+<div class="card amb-card"><div class="amb-badge"><i class="fas fa-star"></i></div><div class="amb-avatar"><i class="fas fa-user"></i></div><h4>سارة أحمد</h4><span class="amb-title">أفضل عضو</span><p>كلية الطب – 2,450 نقطة</p></div>
+<div class="card amb-card"><div class="amb-badge green"><i class="fas fa-hand-holding-heart"></i></div><div class="amb-avatar"><i class="fas fa-user"></i></div><h4>محمد علي</h4><span class="amb-title">أفضل متطوع</span><p>كلية الهندسة – 180 ساعة</p></div>
+<div class="card amb-card"><div class="amb-badge purple"><i class="fas fa-calendar-check"></i></div><div class="amb-avatar"><i class="fas fa-user"></i></div><h4>فاطمة حسن</h4><span class="amb-title">أفضل منظم</span><p>كلية الآداب – 15 نشاط</p></div>
+<div class="card amb-card"><div class="amb-badge orange"><i class="fas fa-camera"></i></div><div class="amb-avatar"><i class="fas fa-user"></i></div><h4>عمر خالد</h4><span class="amb-title">أفضل مصور</span><p>كلية الحاسبات – 500 صورة</p></div>
+<div class="card amb-card"><div class="amb-badge blue"><i class="fas fa-crown"></i></div><div class="amb-avatar"><i class="fas fa-user"></i></div><h4>نورهان محمود</h4><span class="amb-title">أفضل قائد</span><p>كلية التربية – قيادة 10 فرق</p></div>
+</div></div>
+<div class="sub-tab-content" id="prof-admin">
+<div id="adminLogin" class="card form-card" style="max-width:400px;margin:0 auto"><h3>تسجيل الدخول – الإدارة</h3><form id="adminLoginForm">
+<div class="form-group"><label>اسم المستخدم</label><input type="text" id="adminUser" required></div>
+<div class="form-group"><label>كلمة المرور</label><input type="password" id="adminPass" required></div>
+<button type="submit" class="btn btn-primary btn-block">دخول</button>
+</form></div>
+<div id="adminDashboard" style="display:none">
+<div class="grid-3" style="margin-bottom:1.5rem">
+<div class="card prof-stat"><div class="prof-stat-num">2,500</div><div class="prof-stat-label">إجمالي الأعضاء</div></div>
+<div class="card prof-stat"><div class="prof-stat-num">200</div><div class="prof-stat-label">نشاط منجز</div></div>
+<div class="card prof-stat"><div class="prof-stat-num">15,000</div><div class="prof-stat-label">ساعة تطوع</div></div>
+</div>
+<div class="grid-2">
+<div class="card"><h3>إجراءات سريعة</h3><div class="admin-actions">
+<button class="btn btn-primary btn-block" onclick="showToast('تم إرسال الإشعار بنجاح')"><i class="fas fa-bell"></i> إرسال إشعار عام</button>
+<button class="btn btn-green btn-block" onclick="showToast('تم إرسال رسائل الواتساب')"><i class="fab fa-whatsapp"></i> واتساب جماعي</button>
+<button class="btn btn-outline btn-block" onclick="showToast('تم إرسال البريد الإلكتروني')"><i class="fas fa-envelope"></i> بريد إلكتروني جماعي</button>
+<button class="btn btn-outline btn-block"><i class="fas fa-image"></i> رفع صور</button>
+<button class="btn btn-outline btn-block"><i class="fas fa-plus"></i> إضافة نشاط</button>
+<button class="btn btn-outline btn-block"><i class="fas fa-chart-bar"></i> استخراج تقارير</button>
+</div></div>
+<div class="card"><h3>أكثر الكليات مشاركة</h3><div class="chart-placeholder"><i class="fas fa-chart-pie"></i><span>رسم بياني تفاعلي</span></div></div>
+</div>
+<button class="btn btn-outline" style="margin-top:1rem" onclick="document.getElementById('adminDashboard').style.display='none';document.getElementById('adminLogin').style.display='block'"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</button>
+</div></div>
+</div></div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div><h3>طلاب من أجل مصر</h3><p>أسرة طلاب من أجل مصر – جامعة الفيوم. نسعى لبناء جيل واعٍ ملتزم قادر على المساهمة في التنمية المستدامة.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div></div>
+<div><h4>روابط سريعة</h4><ul><li><a href="#" onclick="switchPage('page-home')">الرئيسية</a></li><li><a href="#" onclick="switchPage('page-about')">من نحن</a></li><li><a href="#" onclick="switchPage('page-activities')">الأنشطة</a></li><li><a href="#" onclick="switchPage('page-achievements')">الإنجازات</a></li><li><a href="#" onclick="switchPage('page-opportunities')">بنك الفرص</a></li></ul></div>
+<div><h4>تواصل معنا</h4><ul><li><i class="fas fa-map-marker-alt"></i> جامعة الفيوم – الفيوم – مصر</li><li><i class="fas fa-phone"></i> 084-2312345</li><li><i class="fas fa-envelope"></i> info@students4egypt.edu.eg</li><li><i class="fas fa-clock"></i> الأحد – الخميس: 9 صباحًا – 5 مساءً</li></ul></div>
+
+
+</div>
+</div>
+<div class="footer-bottom"><div class="container"><p>© 2026 بوابة طلاب من أجل مصر – جامعة الفيوم. جميع الحقوق محفوظة.</p></div></div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay"><div class="modal-card"><button class="modal-close" id="modalClose">&times;</button><div class="modal-body" id="modalBody"></div></div></div>
+
+<script src="script.js"></script>
+</body></html>
